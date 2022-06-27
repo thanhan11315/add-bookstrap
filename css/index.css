@@ -4,12 +4,14 @@
     padding-top: 10px;
     padding-bottom: 15px;
 }
-#header .container ul.nav{
-    height: 100%;
+
+#header .container ul.nav {
+    margin-left: auto;
+    font-size: 17px;
 }
 
 #header .container ul.nav li {
-    margin: 10px 5px;
+    margin: 10px 8px;
     height: 34px;
 }
 
@@ -38,12 +40,8 @@
     -webkit-appearance: none;
 }
 
-#header .container input[type="checkbox"] {}
-
 #header .container input[type="checkbox"]:checked~ul.nav {
     height: 362px;
-    /* height: 100%; */
-    /* transition-duration: 2s; */
     transition: 1s;
     border-top: 1px solid #fff;
 }
@@ -225,13 +223,7 @@
 }
 
 #inf div.container .row ul.fa-ul {
-    /* margin-left: 0px;
-    justify-content: space-between;*/
     margin-bottom: 0px;
-}
-
-#inf div.container .row ul.fa-ul li {
-    /* margin-left: 35px; */
 }
 
 #inf div.container .row ul.fa-ul li a {
@@ -241,8 +233,6 @@
 #inf div.container .row ul.fa-ul li span a {
     color: #e1293d;
 }
-
-#inf div.container .row ul.fa-ul li span {}
 
 #inf .container .row span:first-child {
     font-weight: bold;
@@ -260,8 +250,24 @@
 #footer {
     color: #666;
 }
-
-
-input[type="checkbox"]:checked~.display {
-    display: none;
+/* carousel */
+#demo .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-left: 5px;
 }
+
+#demo .carousel-control-prev-icon,
+#demo .carousel-control-next-icon {
+    opacity: 0.6;
+    width: 50px;
+    height: 50px;
+}
+
+#demo .carousel-control-prev-icon:hover,
+#demo .carousel-control-next-icon:hover {
+    opacity: 0.8;
+    background-color: #666;
+}
+/* carousel */
